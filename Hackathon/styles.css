@@ -1,0 +1,214 @@
+html{
+  background-color:black;
+}
+hr{
+  border:5px solid white;
+}
+
+h1{
+  color:white;
+  text-align:center;
+  font-family:impact;
+  font-size:100px;
+}
+
+.hook{
+  color:white;
+  font-family:tahoma;
+  text-align:center;
+  font-size:40px;
+}
+
+.parallax {
+  background-image: url('https://i.guim.co.uk/img/media/8d904ba5091c05f48cd173406dfa974244e27732/93_193_4090_2454/master/4090.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=79ed523100f04fcd49351d3fdaa82251');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.footer { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  z-index: 10;
+}
+
+.btn-group button {
+background-color: white; /* Green background */
+color: black; /* White text */
+padding: 10px 24px; /* Some padding */
+cursor: pointer; /* Pointer/hand icon */
+float: left; /* Float the buttons side by side */
+font-family:impact;
+font-size:30px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+content: "";
+clear: both;
+display: table;
+}
+
+.btn-group button:not(:last-child) {
+border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: gray;
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+marquee{
+  color:white;
+  font-family:impact;
+  text-align:center;
+  font-size:40px;
+}
+.mission{
+  background-color:black;
+  color:white;
+  text-align:center;
+  font-family:impact;
+  font-size:40px;
+  align-items:center;
+  width:100%;
+  height:50%;
+  text-align:center;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  animation: fadeIn 5s;
+}
+
+/*Others*/
+.content, nav {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*Styles for Technology Page*/
+.tech {
+    background-color: white;
+}
+
+.tech img {
+    width: 400px;
+}
+
+/* Styles for Science Page*/
+.science {
+    background-color: white;
+    color: black;
+}
+
+.science h2, h3 {
+    text-align: center;
+    color: black;
+}
+
+.parallax_b {
+    background-image: url(science_bkg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.science ul, li {
+    text-align: justify;
+}
+
+.science p {
+    color: black;
+}
+
+.science img{
+    width: 700px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container-f {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+/*specialized text section from link*/
+* {
+    box-sizing: border-box;
+  }
+  :root {
+    --background-color: black;
+    --text-color: hsl(0, 0%, 100%);
+  }
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1.5rem, 1rem + 18vw, 15rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  
+  .wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  }
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+  }
+  
